@@ -1,5 +1,5 @@
 /**
- * Main class to demonstrate the usage of the observer pattern with text messages.
+ * Main class to demonstrate the usage of the observer pattern with table.
  */
 public class Main {
     /**
@@ -7,15 +7,15 @@ public class Main {
      * @param args The command-line arguments.
      */
     public static void main(String[] args) {
-        TableMessage tableMessage = new TableMessage();
+        Table tableMessage = new Table();
         TriggerObserver triggerObserver = new TriggerObserver();
         // Attach observer to the subject
         tableMessage.addObserver(triggerObserver);
-        tableMessage.setMessage("Hello, World!");
-        tableMessage.setMessage("This is a new message.");
+        tableMessage.setTable("Table");
+        tableMessage.setTable("This is a new table");
         // Detach observer from the subject
         tableMessage.removeObserver(triggerObserver);
         // Set another message (without triggering observer)
-        tableMessage.setMessage("Observer is detached.");
+        tableMessage.setTable("Observer is detached.");
     }
 }

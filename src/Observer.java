@@ -3,8 +3,8 @@
  */
 public interface Observer {
     /**
-     * Update the observer with the given message.
-     * @param message The message received from the subject.
+     * Update the observer with the given table.
+     * @param table The table received from the subject.
      */
-    void update(String message);
+    void update(String table);
 }

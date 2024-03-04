@@ -15,8 +15,8 @@ public interface Subject {
     void removeObserver(Observer observer);
 
     /**
-     * Notify all observers with the given message.
-     * @param message The message to be sent to observers.
+     * Notify all observers with the given table.
+     * @param table The table to be sent to observers.
      */
-    void notifyObservers(String message);
+    void notifyObservers(String table);
 }
